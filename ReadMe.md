@@ -21,7 +21,11 @@ _Behavior 1_
 Can create a new WordFrequencyCounter object
 
 _Behavior 2_
-Can create a new WordFrequencyCounter object
+Can correctly capture a letter and return the letter if it is a match to the same letter
+Input: a
+Output: a
+
+
 ```
 Give an example
 ```

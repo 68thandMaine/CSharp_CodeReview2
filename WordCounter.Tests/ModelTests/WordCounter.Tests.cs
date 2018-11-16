@@ -6,12 +6,23 @@ namespace WordCounter.Tests
   [TestClass]
   public class WordFrequencyCounterTest
   {
+
     [TestMethod]
-    public void constructor_CreatesInstanceOfWordFrequencyCounter_True()
+    public void Constructor_CreatesInstanceOfWordFrequencyCounter_True()
     {
-      WordFrequencyCounter newWord = new WordFrequencyCounter();
+      WordFrequencyCounter newWord = new WordFrequencyCounter(" ", " ");
       Assert.AreEqual(typeof(WordFrequencyCounter), newWord.GetType());
     }
-    
+
+    // [TestMethod]
+    // public void CompareTwoLetters_ReturnsLetterIfEqual_String()
+    // {
+    //   string testLetter = "a";
+    //   WordFrequencyCounter newWord = new WordFrequencyCounter("a", " ");
+    //   string result = newWord.GetDescription();
+    //   Assert.AreEqual(testLetter, result);
+    // }
+
+
   }
 }
