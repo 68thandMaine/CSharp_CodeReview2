@@ -61,5 +61,15 @@ namespace WordCounter.Tests
       int result = newTest.WordCounter();
       Assert.AreEqual(expectedAnswer, result);
     }
+
+    [TestMethod]
+    public void ToLowerCase_ReturnsStringsLowerCased_String()
+    {
+      string expectedAnswer = "hello";
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("HELLO", " ");
+      string result = newTest.ToLowerCase();
+      Console.WriteLine("___________________Lower cased word____________ " + result);
+      Assert.AreEqual(expectedAnswer, result);
+    }
   }
 }

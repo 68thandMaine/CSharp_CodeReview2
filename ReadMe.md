@@ -46,6 +46,13 @@ Input: Word = Hello // sentence = "Hello there said the cheery man saying hello"
 Output: count = 2
 Note: This behavior is very similar to behavior 5. The difference is that in the test methods I will be returning an integer value as a count rather than a string value. I think that I can refactor behaviors 5 and 6 together.
 
+_Behavior 7_
+Will change all letters to lower case for more specific comparing
+Input: Hello
+Output: hello
+
+
+
 
 ## Built With
 

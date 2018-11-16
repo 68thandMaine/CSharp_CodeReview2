@@ -56,5 +56,10 @@ namespace WordCounter.Models
       }
       return counter;
     }
+    public string ToLowerCase()
+    {
+      string wordToBeCounted = _capturedWord.ToLower();
+      return wordToBeCounted;
+    }
   }
 }
