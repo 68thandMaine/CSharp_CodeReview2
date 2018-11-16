@@ -14,14 +14,14 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(WordFrequencyCounter), newWord.GetType());
     }
 
-    // [TestMethod]
-    // public void CompareTwoLetters_ReturnsLetterIfEqual_String()
-    // {
-    //   string testLetter = "a";
-    //   WordFrequencyCounter newWord = new WordFrequencyCounter("a", " ");
-    //   string result = newWord.GetDescription();
-    //   Assert.AreEqual(testLetter, result);
-    // }
+    [TestMethod]
+    public void CompareTwoLetters_ReturnsLetterIfEqual_String()
+    {
+      string testLetter = "a";
+      WordFrequencyCounter newWord = new WordFrequencyCounter("a", " ");
+      string result = newWord.CompareTwoLetters();
+      Assert.AreEqual(testLetter, result);
+    }
 
 
   }
