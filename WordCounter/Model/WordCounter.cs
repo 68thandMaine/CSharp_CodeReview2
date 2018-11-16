@@ -23,30 +23,30 @@ namespace WordCounter.Models
       string compareSentence = _capturedSentence;
       return compareSentence;
     }
-    public string[] SplitSentence()
-    {
-      string userSentence = _capturedSentence;
-      string[] splitArr = userSentence.Split(' ');
-      return splitArr;
-    }
-    public string LetterCounter()
-    {
-      string wordToBeCounted = _capturedWord;
-      string sentenceToBeSplit = _capturedSentence;
-      string[] splitArr = sentenceToBeSplit.Split(' ');
-      int counter = 0;
-      for (int i = 0; i < splitArr.Length; i++)
-      if (splitArr[i] == wordToBeCounted)
-      {
-        counter++;
-      }
-      string counterCount = counter.ToString();
-      return counterCount;
-    }
+    // public string[] SplitSentence()
+    // {
+    //   string userSentence = _capturedSentence;
+    //   string[] splitArr = userSentence.Split(' ');
+    //   return splitArr;
+    // }
+    // public string LetterCounter()
+    // {
+    //   string wordToBeCounted = _capturedWord;
+    //   string sentenceToBeSplit = _capturedSentence;
+    //   string[] splitArr = sentenceToBeSplit.Split(' ');
+    //   int counter = 0;
+    //   for (int i = 0; i < splitArr.Length; i++)
+    //   if (splitArr[i] == wordToBeCounted)
+    //   {
+    //     counter++;
+    //   }
+    //   string counterCount = counter.ToString();
+    //   return counterCount;
+    // }
     public int WordCounter()
     {
-      string wordToBeCounted = _capturedWord;
-      string sentenceToBeSplit = _capturedSentence;
+      string wordToBeCounted = _capturedWord.ToLower();
+      string sentenceToBeSplit = _capturedSentence.ToLower();
       string[] splitArr = sentenceToBeSplit.Split(' ');
       int counter = 0;
       for (int i = 0; i < splitArr.Length; i++)
@@ -56,10 +56,10 @@ namespace WordCounter.Models
       }
       return counter;
     }
-    public string ToLowerCase()
-    {
-      string wordToBeCounted = _capturedWord.ToLower();
-      return wordToBeCounted;
-    }
+    // public string ToLowerCase()
+    // {
+    //   string wordToBeCounted = _capturedWord.ToLower();
+    //   return wordToBeCounted;
+    // }
   }
 }
