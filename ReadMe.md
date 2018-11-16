@@ -16,6 +16,7 @@ In it's current state this program is meant to prove test methods. To run this f
 Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the console to observe if the test methods pass or fail.
 
 ### Break down into end to end tests
+## Business logic tests
 
 _Behavior 1_
 Can create a new WordFrequencyCounter object
@@ -60,6 +61,9 @@ Program should be able to split at white space and special characters.
 Input: Hello, my name is Joel.
 Output: {"Hello", "my", "name", "is", "Joel"}
 Note: This behavior was refactored into the WordCounter() method after the test passed.
+
+---------------------------------------------------------------------------------------------------------
+
 
 
 
