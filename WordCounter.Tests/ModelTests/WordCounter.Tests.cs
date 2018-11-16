@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
 using System.Collections.Generic;
@@ -45,9 +46,10 @@ namespace WordCounter.Tests
     [TestMethod]
     public void LetterCounter_CountAllInstancesOfASingleLetterInASentence_String()
     {
-      string expectedAnswer = "2";
-      WordFrequencyCounter newTest = new WordFrequencyCounter ("a", "Look at a word that a user can enter");
+      string expectedAnswer = "4";
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("a", "Look at a a a word that a user can enter");
       string result = newTest.LetterCounter();
+      Console.WriteLine("-------------------------This is the expected count value taken from the LetterCounter method: " + result);
       Assert.AreEqual(expectedAnswer, result);
     }
   }

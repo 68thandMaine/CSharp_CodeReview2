@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace WordCounter.Models
@@ -33,7 +34,14 @@ namespace WordCounter.Models
       string wordToBeCounted = _capturedWord;
       string sentenceToBeSplit = _capturedSentence;
       string[] splitArr = sentenceToBeSplit.Split(' ');
-      return " ";
+      int counter = 0;
+      for (int i = 0; i < splitArr.Length; i++)
+      if (splitArr[i] == wordToBeCounted)
+      {
+        counter++;
+      }
+      string counterCount = counter.ToString();
+      return counterCount;
     }
   }
 }
