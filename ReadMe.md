@@ -74,10 +74,21 @@ _Behavior 8_
 
 ## Authors
 
-* **Chris Rudnicky** -
+* **Chris Rudnicky**
 
 ## License
 
 This project is licensed under the MIT License
 
 ## Acknowledgments
+
+This project was built with inspiration found from:
+
+* Basic idea for how to count words in a text file found here: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq
+* Learned how to split a string based off of specific characters here:
+https://www.dotnetperls.com/split
+https://www.c-sharpcorner.com/UploadFile/mahesh/split-string-in-C-Sharp/
+* Learned about delimiter splitting here:
+https://docs.microsoft.com/en-us/dotnet/csharp/how-to/parse-strings-using-split
+* Epicodus C# Week 1 lessons on Basic Console Apps and testing:
+https://www.learnhowtoprogram.com/c
