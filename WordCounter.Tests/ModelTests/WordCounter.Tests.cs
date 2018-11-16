@@ -1,13 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using WordCounter.Models;
 
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordFrequencyCounter
+  public class WordFrequencyCounterTest
   {
-
-    // Test methods will go here.
-
+    [TestMethod]
+    public void constructor_CreatesInstanceOfWordFrequencyCounter_True()
+    {
+      WordFrequencyCounter newWord = new WordFrequencyCounter();
+      Assert.AreEqual(typeof(WordFrequencyCounter), newWord.GetType());
+    }
+    
   }
 }

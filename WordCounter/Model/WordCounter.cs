@@ -1,9 +1,9 @@
 namespace WordCounter.Models
 {
-  public class Item
+  public class WordFrequencyCounter
   {
 
-    // properties, methods, etc. will go here.
+
 
   }
 }

@@ -18,10 +18,10 @@ Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the co
 ### Break down into end to end tests
 
 _Behavior 1_
-Can capture a single letter and return it.
-Input: A
-Output: A
+Can create a new WordFrequencyCounter object
 
+_Behavior 2_
+Can create a new WordFrequencyCounter object
 ```
 Give an example
 ```

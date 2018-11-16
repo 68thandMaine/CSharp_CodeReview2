@@ -1,0 +1,14 @@
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.deps.json
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.json
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.dev.json
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.csproj.CoreCompileInputs.cache
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.AssemblyInfo.cs
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.pdb
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.dll
+/Users/playourheartout/Desktop/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.pdb
