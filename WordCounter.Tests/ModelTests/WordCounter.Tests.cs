@@ -52,5 +52,14 @@ namespace WordCounter.Tests
       Console.WriteLine("-------------------------This is the expected count value taken from the LetterCounter method: " + result);
       Assert.AreEqual(expectedAnswer, result);
     }
+
+    [TestMethod]
+    public void WordCounter_CountsAllInstancesOfASingleWordInASentence_String()
+    {
+      int expectedAnswer = 2;
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello there said the cheery man saying hello helloseph");
+      int result = newTest.WordCounter();
+      Assert.AreEqual(expectedAnser, result);
+    }
   }
 }

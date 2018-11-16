@@ -40,16 +40,17 @@ Can count the instances of one letter in an array
 Input: Word = a // Sentence = "Look at a word that a user can enter"
 Output: count = 2
 
-```
-Give an example
-```
+_Behavior 6_
+Can count the instances of an entire word in a sentence testArray
+Input: Word = Hello // sentence = "Hello there said the cheery man saying hello"
+Output: count = 2
+Note: This behavior is very similar to behavior 5. The difference is that in the test methods I will be returning an integer value as a count rather than a string value. I think that I can refactor behaviors 5 and 6 together.
 
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* .NET framework
+
 
 
 ## Authors
