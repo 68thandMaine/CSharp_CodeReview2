@@ -13,16 +13,16 @@ namespace WordCounter.Models
       _capturedWord = word;
       _capturedSentence = sentence;
     }
-    public string ReturnString()
-    {
-      string compareString = _capturedWord;
-      return compareString;
-    }
-    public string ReturnSentence()
-    {
-      string compareSentence = _capturedSentence;
-      return compareSentence;
-    }
+    // public string ReturnString()
+    // {
+    //   string compareString = _capturedWord;
+    //   return compareString;
+    // }
+    // public string ReturnSentence()
+    // {
+    //   string compareSentence = _capturedSentence;
+    //   return compareSentence;
+    // }
     // public string[] SplitSentence()
     // {
     //   string userSentence = _capturedSentence;
@@ -47,7 +47,8 @@ namespace WordCounter.Models
     {
       string wordToBeCounted = _capturedWord.ToLower();
       string sentenceToBeSplit = _capturedSentence.ToLower();
-      string[] splitArr = sentenceToBeSplit.Split(' ');
+      char[] splitRules = {' ',',','.'};
+      string[] splitArr = sentenceToBeSplit.Split(splitRules);
       int counter = 0;
       for (int i = 0; i < splitArr.Length; i++)
       if (splitArr[i] == wordToBeCounted)
@@ -61,19 +62,19 @@ namespace WordCounter.Models
     //   string wordToBeCounted = _capturedWord.ToLower();
     //   return wordToBeCounted;
     // }
-    public int DelimiterSplit()
-    {
-      string wordToBeCounted = _capturedWord.ToLower();
-      string sentenceToBeSplit = _capturedSentence.ToLower();
-      char[] splitRules = {' ',',','.'};
-      string[] splitArr = sentenceToBeSplit.Split(splitRules);
-      int counter = 0;
-      for (int i = 0; i < splitArr.Length; i++)
-      if (splitArr[i] == wordToBeCounted)
-      {
-        counter++;
-      }
-      return counter;
-    }
+    // public int DelimiterSplit()
+    // {
+    //   string wordToBeCounted = _capturedWord.ToLower();
+    //   string sentenceToBeSplit = _capturedSentence.ToLower();
+    //   char[] splitRules = {' ',',','.'};
+    //   string[] splitArr = sentenceToBeSplit.Split(splitRules);
+    //   int counter = 0;
+    //   for (int i = 0; i < splitArr.Length; i++)
+    //   if (splitArr[i] == wordToBeCounted)
+    //   {
+    //     counter++;
+    //   }
+    //   return counter;
+    // }
   }
 }

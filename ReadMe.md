@@ -55,6 +55,11 @@ Input: Hello
 Output: hello
 Note: This behavior was refactored into the WordCounter() method after the test passed.
 
+_Behavior 8_
+Program should be able to split at white space and special characters.
+Input: Hello, my name is Joel.
+Output: {"Hello", "my", "name", "is", "Joel"}
+Note: This behavior was refactored into the WordCounter() method after the test passed.
 
 
 

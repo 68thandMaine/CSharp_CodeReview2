@@ -71,14 +71,14 @@ namespace WordCounter.Tests
     //   Console.WriteLine("___________________Lower cased word____________ " + result);
     //   Assert.AreEqual(expectedAnswer, result);
 
-    [TestMethod]
-    public void DelimiterSplit_SplitStringUsingDelimitersToAccountForPuncuation_Int()
-    {
-      int expectedAnswer = 2;
-      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello, my name is Chris. I like to say hello.");
-      int result = newTest.DelimiterSplit();
-      Assert.AreEqual(expectedAnswer, result);
-    }
+    // [TestMethod]
+    // public void DelimiterSplit_SplitStringUsingDelimitersToAccountForPuncuation_Int()
+    // {
+    //   int expectedAnswer = 3;
+    //   WordFrequencyCounter newTest = new WordFrequencyCounter ("hello", "Hello, my name is Chris. I like hello, to say ,hello.");
+    //   int result = newTest.DelimiterSplit();
+    //   Assert.AreEqual(expectedAnswer, result);
+    // }
 
     }
   }
