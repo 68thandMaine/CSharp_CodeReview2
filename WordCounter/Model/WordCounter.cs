@@ -61,5 +61,19 @@ namespace WordCounter.Models
     //   string wordToBeCounted = _capturedWord.ToLower();
     //   return wordToBeCounted;
     // }
+    public int DelimiterSplit()
+    {
+      string wordToBeCounted = _capturedWord.ToLower();
+      string sentenceToBeSplit = _capturedSentence.ToLower();
+      char[] splitRules = {' ',',','.'};
+      string[] splitArr = sentenceToBeSplit.Split(splitRules);
+      int counter = 0;
+      for (int i = 0; i < splitArr.Length; i++)
+      if (splitArr[i] == wordToBeCounted)
+      {
+        counter++;
+      }
+      return 0;
+    }
   }
 }
