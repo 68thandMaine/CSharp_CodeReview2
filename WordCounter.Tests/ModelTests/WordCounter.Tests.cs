@@ -54,12 +54,12 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void WordCounter_CountsAllInstancesOfASingleWordInASentence_String()
+    public void WordCounter_CountsAllInstancesOfASingleWordInASentence_Int()
     {
       int expectedAnswer = 2;
-      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello there said the cheery man saying hello helloseph");
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello there said the cheery man saying Hello helloseph");
       int result = newTest.WordCounter();
-      Assert.AreEqual(expectedAnser, result);
+      Assert.AreEqual(expectedAnswer, result);
     }
   }
 }

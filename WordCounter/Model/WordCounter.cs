@@ -43,5 +43,18 @@ namespace WordCounter.Models
       string counterCount = counter.ToString();
       return counterCount;
     }
+    public int WordCounter()
+    {
+      string wordToBeCounted = _capturedWord;
+      string sentenceToBeSplit = _capturedSentence;
+      string[] splitArr = sentenceToBeSplit.Split(' ');
+      int counter = 0;
+      for (int i = 0; i < splitArr.Length; i++)
+      if (splitArr[i] == wordToBeCounted)
+      {
+        counter++;
+      }
+      return counter;
+    }
   }
 }
