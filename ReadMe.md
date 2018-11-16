@@ -35,6 +35,10 @@ Can split sentence into a list of words
 Input: "Hello this is a sentence"
 Output {"Hello", "this", "is", "a", "sentence"}
 
+_Behavior 5_
+Can count the instances of one letter in an array
+Input: Word = a // Sentence = "Look at a word that a user can enter"
+Output: count = 2
 
 ```
 Give an example

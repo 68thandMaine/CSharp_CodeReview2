@@ -34,12 +34,12 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void SplitSentence_ReturnAListOfWordsInSentence_List()
+    public void SplitSentence_ReturnAListOfWordsInSentence_String()
     {
-      List<string> testList = new List<string> {"Wow", "what", "a", "task", "this", "is"};
+      string[] testArray = new string[] {"Wow,", "what", "a", "task", "this", "is"};
       WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Wow, what a task this is");
-      List<string> result = newTest.SplitSentence();
-      CollectionAssert.AreEqual(testList, result);
+      string[] result = newTest.SplitSentence();
+      CollectionAssert.AreEqual(testArray, result);
     }
 
   }

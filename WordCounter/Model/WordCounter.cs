@@ -22,11 +22,10 @@ namespace WordCounter.Models
       string compareSentence = _capturedSentence;
       return compareSentence;
     }
-    public List<string> SplitSentence()
+    public string[] SplitSentence()
     {
       string userSentence = _capturedSentence;
-      List<string> splitList = new List<string>();
-
+      string[] splitList = userSentence.Split(' ');
       return splitList;
 
     }
