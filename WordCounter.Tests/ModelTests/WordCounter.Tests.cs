@@ -36,11 +36,19 @@ namespace WordCounter.Tests
     [TestMethod]
     public void SplitSentence_ReturnAListOfWordsInSentence_String()
     {
-      string[] testArray = new string[] {"Wow,", "what", "a", "task", "this", "is"};
-      WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Wow, what a task this is");
+      string[] testArray = new string[] {"Hey", "now", "hey", "now"};
+      WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Hey now hey now");
       string[] result = newTest.SplitSentence();
       CollectionAssert.AreEqual(testArray, result);
     }
 
+    [TestMethod]
+    public void LetterCounter_CountAllInstancesOfASingleLetterInASentence_String()
+    {
+      string expectedAnswer = "2";
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("a", "Look at a word that a user can enter");
+      string result = newTest.LetterCounter();
+      Assert.AreEqual(expectedAnswer, result);
+    }
   }
 }

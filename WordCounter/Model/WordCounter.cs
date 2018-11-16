@@ -25,9 +25,15 @@ namespace WordCounter.Models
     public string[] SplitSentence()
     {
       string userSentence = _capturedSentence;
-      string[] splitList = userSentence.Split(' ');
-      return splitList;
-
+      string[] splitArr = userSentence.Split(' ');
+      return splitArr;
+    }
+    public string LetterCounter()
+    {
+      string wordToBeCounted = _capturedWord;
+      string sentenceToBeSplit = _capturedSentence;
+      string[] splitArr = sentenceToBeSplit.Split(' ');
+      return " ";
     }
   }
 }
