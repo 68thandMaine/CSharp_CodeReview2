@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace WordCounter.Models
 {
   public class WordFrequencyCounter
@@ -10,7 +12,7 @@ namespace WordCounter.Models
       _capturedWord = word;
       _capturedSentence = sentence;
     }
-    public string ReturnString ()
+    public string ReturnString()
     {
       string compareString = _capturedWord;
       return compareString;
@@ -19,6 +21,14 @@ namespace WordCounter.Models
     {
       string compareSentence = _capturedSentence;
       return compareSentence;
+    }
+    public List<string> SplitSentence()
+    {
+      string userSentence = _capturedSentence;
+      List<string> splitList = new List<string>();
+
+      return splitList;
+
     }
   }
 }

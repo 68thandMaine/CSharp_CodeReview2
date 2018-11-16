@@ -30,6 +30,11 @@ Can correctly capture and return a sentence.
 Input: "Hello this is a sentence"
 Output: "Hello this is a sentence"
 
+_Behavior 4_
+Can split sentence into a list of words
+Input: "Hello this is a sentence"
+Output {"Hello", "this", "is", "a", "sentence"}
+
 
 ```
 Give an example

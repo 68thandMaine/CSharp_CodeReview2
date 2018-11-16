@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
+using System.Collections.Generic;
 
 namespace WordCounter.Tests
 {
@@ -30,6 +31,15 @@ namespace WordCounter.Tests
       WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Wow, what a task this is");
       string result = newTest.ReturnSentence();
       Assert.AreEqual(testSentence, result);
+    }
+
+    [TestMethod]
+    public void SplitSentence_ReturnAListOfWordsInSentence_List()
+    {
+      List<string> testList = new List<string> {"Wow", "what", "a", "task", "this", "is"};
+      WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Wow, what a task this is");
+      List<string> result = newTest.SplitSentence();
+      CollectionAssert.AreEqual(testList, result);
     }
 
   }
