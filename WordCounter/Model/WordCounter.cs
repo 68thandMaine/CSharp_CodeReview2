@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WordCounter.Models
+namespace WordCounter
 {
   public class WordFrequencyCounter
   {
