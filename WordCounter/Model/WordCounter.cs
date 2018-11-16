@@ -12,7 +12,8 @@ namespace WordCounter.Models
     }
     public string CompareTwoLetters ()
     {
-     return " ";
+      string compareLetter = _capturedWord;
+      return compareLetter;
     }
   }
 }
