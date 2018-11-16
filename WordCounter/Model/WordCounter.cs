@@ -10,10 +10,15 @@ namespace WordCounter.Models
       _capturedWord = word;
       _capturedSentence = sentence;
     }
-    public string CompareTwoLetters ()
+    public string ReturnString ()
     {
-      string compareLetter = _capturedWord;
-      return compareLetter;
+      string compareString = _capturedWord;
+      return compareString;
+    }
+    public string ReturnSentence()
+    {
+      string compareSentence = _capturedSentence;
+      return compareSentence;
     }
   }
 }

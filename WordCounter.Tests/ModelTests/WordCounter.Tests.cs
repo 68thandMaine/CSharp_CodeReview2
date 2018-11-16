@@ -15,14 +15,22 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void CompareTwoLetters_ReturnsLetterIfEqual_String()
+    public void ReturnString_ReturnsAString_String()
     {
       string testLetter = "a";
-      WordFrequencyCounter newWord = new WordFrequencyCounter("a", " ");
-      string result = newWord.CompareTwoLetters();
+      WordFrequencyCounter newTest = new WordFrequencyCounter("a", " ");
+      string result = newTest.ReturnString();
       Assert.AreEqual(testLetter, result);
     }
 
+    [TestMethod]
+    public void ReturnSentence_ReturnASentence_String()
+    {
+      string testSentence = "Wow, what a task this is";
+      WordFrequencyCounter newTest = new WordFrequencyCounter("a", "Wow, what a task this is");
+      string result = newTest.ReturnSentence();
+      Assert.AreEqual(testSentence, result);
+    }
 
   }
 }

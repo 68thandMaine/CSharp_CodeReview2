@@ -25,6 +25,11 @@ Can correctly capture a letter and return the letter if it is a match to the sam
 Input: a
 Output: a
 
+_Behavior 3_
+Can correctly capture and return a sentence.
+Input: "Hello this is a sentence"
+Output: "Hello this is a sentence"
+
 
 ```
 Give an example
