@@ -9,9 +9,11 @@ _This project will take a word and check to see how many times that word appears
 
 ### Installing
 
-In it's current state this program is meant to prove test methods. To run this file open the folder in the terminal and navigate to the WordCounter.Test subdirectory. Once inside, run ``` dotnet test ``` in the console to observe if the test methods pass or fail.
+To run this file open a terminal window and navigate to the WordCounter.Solution folder. Navigate to the WordCounter subdirectory and run the command ``` mono Program.exe ``` to run the program.
 
 ## Running the tests
+
+Test methods and methods in the production code are commented out as they have all been refactored into one method. To observe the functioning tests you need to uncomment out the test methods in the WordCounter.Test.cs file and the corresponding methods in the WordCounter.cs file.
 
 Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the console to observe if the test methods pass or fail.
 
@@ -65,11 +67,11 @@ _Behavior 8_
 ---------------------------------------------------------------------------------------------------------
 
 
-
-
 ## Built With
 
 * .NET framework
+* MSTest
+* Mono
 
 
 ## Authors
