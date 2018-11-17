@@ -47,7 +47,7 @@ namespace WordCounter
     {
       string wordToBeCounted = _capturedWord.ToLower();
       string sentenceToBeSplit = _capturedSentence.ToLower();
-      char[] splitRules = {' ',',','.'};
+      char[] splitRules = {' ',',','.','!','?'};
       string[] splitArr = sentenceToBeSplit.Split(splitRules);
       int counter = 0;
       for (int i = 0; i < splitArr.Length; i++)

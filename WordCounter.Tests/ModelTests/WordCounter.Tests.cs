@@ -57,7 +57,7 @@ namespace WordCounter.Tests
     public void WordCounter_CountsAllInstancesOfASingleWordInASentence_Int()
     {
       int expectedAnswer = 4;
-      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello hello HeLLo, the cheery man saying Hello helloseph");
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello, hello. HeLLo, the cheery man saying !Hello helloseph");
       int result = newTest.WordCounter();
       Assert.AreEqual(expectedAnswer, result);
     }
