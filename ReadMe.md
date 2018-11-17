@@ -17,7 +17,6 @@ Test methods and methods in the production code are commented out as they have a
 
 Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the console to observe if the test methods pass or fail.
 
-### Break down into end to end tests
 ## Business logic tests
 
 _Behavior 1_
