@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
-
+using System.Collections.Generic;
 
 namespace WordCounter.Controllers
 {
@@ -23,14 +23,14 @@ namespace WordCounter.Controllers
 
       //TO PASS----------------
       WordFrequencyCounter newWordFrequencyCounter = new WordFrequencyCounter(word, sentence);
-      return RedirectToAction("Index", newWordFrequencyCounter);
+      return RedirectToAction("Index");
     }
 
     [HttpGet("/game")]
     public ActionResult Index()
     {
-
-      return View(newWordFrequencyCounter);
+      List<WordFrequencyCounter> game = WordFrequencyCounter.GetGame();
+      return View(game);
     }
   }
 }

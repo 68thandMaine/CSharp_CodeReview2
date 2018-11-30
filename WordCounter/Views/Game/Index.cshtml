@@ -1,12 +1,24 @@
 @using WordCounter.Models;
+@using System;
 
 <h1>WordCounter</h1>
 
-<h3>The word you searched for was: Model.GetWord()</h3>
+@if (Model.Count == 0)
+{
+<p>Please enter a word and a block of text to use this application!</p>
+<a href="game/new">Return to previous screen</a>
+}
+
+@if (Model.Count != 0)
+{
+@foreach(WordFrequencyCounter game in Model)
+{<h3>The word you searched for was: @game.GetWord()</h3>
 <br>
-<h3>The test you searched through was: <br> Model.GetText()</h3>
+<h3>The text you searched through was: <br> @game.GetText()</h3>
 <br>
-<h3>Your word appeared Model.WordCounter() number of times</h3>
+<h3>Your word appeared @game.WordCounter() number of times</h3>
 <br>
 <br>
-<a href="game/new">Play again</a>
+<a href="game/new">Play again</a>}
+}
+}

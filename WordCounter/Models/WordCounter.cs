@@ -7,12 +7,20 @@ namespace WordCounter.Models
   {
     private string _capturedWord;
     private string _capturedSentence;
+    private static List<WordFrequencyCounter> _games = new List<WordFrequencyCounter> {};
 
 
     public WordFrequencyCounter (string word, string sentence)
     {
       _capturedWord = word;
       _capturedSentence = sentence;
+      _games.Add(this);
+
+    }
+
+    public static List<WordFrequencyCounter> GetGame()
+    {
+      return _games;
     }
 
     public int WordCounter()

@@ -26,7 +26,7 @@ namespace WordCounter.tests
     }
 
     [TestMethod]
-    public void Index_HasCorrectModelType_String()
+    public void Index_HasCorrectModelType_WordFrequencyCounterList()
     {
       //Arrange
       ViewResult indexView = new HomeController().Index() as ViewResult;
@@ -37,7 +37,7 @@ namespace WordCounter.tests
       // This creates a vairable named result. By naming it var we allow c# to implicitely decide what type of data result holds. In this case we know that we are holding a rendered view response that has the datatype of the Model in it. I believe this will be a string.
 
       //Assert
-      Assert.IsInstanceOfType(result, typeof(string));
+      Assert.IsInstanceOfType(result, typeof(List<WordFrequencyCounter>));
     }
   }
 }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using WordCounter.Controllers;
 using WordCounter.Models;
 using System;
+using System.Collections.Generic;
 
 
 namespace WordCounter.Tests
@@ -23,7 +24,7 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
     [TestMethod]
-    public void Index_HasCorrectModelType_String()
+    public void Index_HasCorrectModelType_WordFrequencyCounterList()
     {
       //Arrange
       ViewResult indexView = new GameController().Index() as ViewResult;
@@ -32,7 +33,7 @@ namespace WordCounter.Tests
       var result = indexView.ViewData.Model;
 
       //Assert
-      Assert.IsInstanceOfType(result, typeof(string));
+      Assert.IsInstanceOfType(result, typeof(List<WordFrequencyCounter>));
     }
 
     [TestMethod]
