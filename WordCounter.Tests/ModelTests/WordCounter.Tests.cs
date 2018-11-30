@@ -1,6 +1,6 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter;
+using WordCounter.Models;
 using System.Collections.Generic;
 
 namespace WordCounter.Tests
@@ -8,6 +8,15 @@ namespace WordCounter.Tests
   [TestClass]
   public class WordFrequencyCounterTest
   {
+
+    [TestMethod]
+    public void WordCounter_CountsAllInstancesOfASingleWordInASentence_Int()
+    {
+      int expectedAnswer = 4;
+      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello, hello. HeLLo, the cheery man saying !Hello helloseph");
+      int result = newTest.WordCounter();
+      Assert.AreEqual(expectedAnswer, result);
+    }
 
     // [TestMethod]
     // public void Constructor_CreatesInstanceOfWordFrequencyCounter_True()
@@ -52,15 +61,6 @@ namespace WordCounter.Tests
     //   Console.WriteLine("-------------------------This is the expected count value taken from the LetterCounter method: " + result);
     //   Assert.AreEqual(expectedAnswer, result);
     // }
-
-    [TestMethod]
-    public void WordCounter_CountsAllInstancesOfASingleWordInASentence_Int()
-    {
-      int expectedAnswer = 4;
-      WordFrequencyCounter newTest = new WordFrequencyCounter ("Hello", "Hello, hello. HeLLo, the cheery man saying !Hello helloseph");
-      int result = newTest.WordCounter();
-      Assert.AreEqual(expectedAnswer, result);
-    }
 
     // [TestMethod]
     // public void ToLowerCase_ReturnsStringsLowerCased_String()
