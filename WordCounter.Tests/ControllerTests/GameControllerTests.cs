@@ -22,6 +22,18 @@ namespace WordCounter.Tests
       //Assert
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
+    [TestMethod]
+    public void Index_HasCorrectModelType_String()
+    {
+      //Arrange
+      ViewResult indexView = new GameController().Index() as ViewResult;
+
+      //Act
+      var result = indexView.ViewData.Model;
+
+      //Assert
+      Assert.IsInstanceOfType(result, typeof(string));
+    }
 
 
 

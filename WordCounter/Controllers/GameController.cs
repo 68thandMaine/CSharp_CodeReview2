@@ -9,7 +9,7 @@ namespace WordCounter.Controllers
     [HttpGet("/game")]
     public ActionResult Index()
     {
-      return new EmptyResult();
+      return View(false);
     }
 
 
