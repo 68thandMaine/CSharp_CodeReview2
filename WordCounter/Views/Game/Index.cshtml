@@ -1,0 +1,12 @@
+@using WordCounter.Models;
+
+<h1>WordCounter>
+
+<h3>The word you searched for was: @Model.GetWord()</h3>
+<br>
+<h3>The test you searched through was: <br> @Model.GetText()</h3>
+<br>
+<h3>Your word appeared @Model.WordCounter() number of times</h3>
+<br>
+<br>
+<a href="game/new">Play again</a>

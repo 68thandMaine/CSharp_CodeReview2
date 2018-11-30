@@ -7,7 +7,7 @@ namespace WordCounter.Models
   {
     private string _capturedWord;
     private string _capturedSentence;
-  
+
     public WordFrequencyCounter (string word, string sentence)
     {
       _capturedWord = word;
@@ -27,6 +27,14 @@ namespace WordCounter.Models
         counter++;
       }
       return counter;
-  }
+    }
+    public string GetWord()
+    {
+      return _capturedWord;
+    }
+    public string GetText()
+    {
+      return _capturedSentence;
+    }
   }
 }
