@@ -35,9 +35,6 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(result, typeof(string));
     }
 
-
-
-
     [TestMethod]
     public void Create_ReturnsCorrectActionType_RedirectToActionResult()
     {

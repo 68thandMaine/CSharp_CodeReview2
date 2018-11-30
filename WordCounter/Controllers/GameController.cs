@@ -26,10 +26,11 @@ namespace WordCounter.Controllers
       return RedirectToAction("Index", newWordFrequencyCounter);
     }
 
-    // [HttpGet("/game")]
-    // public ActionResult Index()
-    // {
-    //
-    // }
+    [HttpGet("/game")]
+    public ActionResult Index()
+    {
+
+      return View(newWordFrequencyCounter);
+    }
   }
 }
