@@ -36,5 +36,6 @@ namespace WordCounter.Models
     {
       return _capturedSentence;
     }
+    
   }
 }

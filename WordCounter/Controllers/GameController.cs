@@ -6,14 +6,13 @@ namespace WordCounter.Controllers
 {
   public class GameController : Controller
   {
-    [HttpGet("/game")]
-    public ActionResult Index()
+    [HttpGet("/game/new")]
+    public ActionResult New()
     {
       return View();
     }
 
-
-    [HttpPost("/game/new")]
+    [HttpPost("/game")]
     public ActionResult Create(string word, string sentence)
     {
       //TO FAIL---------------
@@ -24,7 +23,13 @@ namespace WordCounter.Controllers
 
       //TO PASS----------------
       WordFrequencyCounter newWordFrequencyCounter = new WordFrequencyCounter(word, sentence);
-      return RedirectToAction("Index");
+      return RedirectToAction("Index", newWordFrequencyCounter);
     }
+
+    // [HttpGet("/game")]
+    // public ActionResult Index()
+    // {
+    //
+    // }
   }
 }
