@@ -18,3 +18,11 @@ Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the co
 
 _Behavior 1_
 The App should Route to a
+
+
+
+### References
+ * Used to write controller tests:
+- ActionResult
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult?view=aspnetcore-2.1
+- EmptyResult https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.emptyresult?view=aspnetcore-2.1
