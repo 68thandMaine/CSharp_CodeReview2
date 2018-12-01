@@ -14,10 +14,11 @@ Test methods and methods in the production code are commented out as they have a
 
 Navigate to the WordCounter.Test subdirectory, run ``` dotnet test ``` in the console to observe if the test methods pass or fail.
 
-## Specs
+# Specs
 
-_Behavior 1_
-The App should Route to a
+#### Behavior 1 : The App should be able to route to a spalsh page.
+1. ###### Route returns correct data type.
+
 
 
 
