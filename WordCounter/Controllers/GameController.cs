@@ -9,6 +9,7 @@ namespace WordCounter.Controllers
     [HttpGet("/game/new")]
     public ActionResult New()
     {
+      WordFrequencyCounter.ClearAll();
       return View();
     }
 
@@ -32,5 +33,12 @@ namespace WordCounter.Controllers
       List<WordFrequencyCounter> game = WordFrequencyCounter.GetGame();
       return View(game);
     }
+
+    // [HttpPost("/game/delete")]
+    // public ActionResult Delete()
+    // {
+    //   WordCounter.ClearAll();
+    //   return View();
+    // }
   }
 }

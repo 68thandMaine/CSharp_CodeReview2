@@ -45,6 +45,9 @@ namespace WordCounter.Models
     {
       return _capturedSentence;
     }
-
+    public static void ClearAll()
+    {
+      _games.Clear();
+    }
   }
 }

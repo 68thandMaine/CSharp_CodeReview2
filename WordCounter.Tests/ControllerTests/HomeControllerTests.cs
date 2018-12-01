@@ -39,5 +39,7 @@ namespace WordCounter.tests
       //Assert
       Assert.IsInstanceOfType(result, typeof(List<WordFrequencyCounter>));
     }
+
+  
   }
 }
